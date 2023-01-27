@@ -1,0 +1,37 @@
+{
+	"name": "project-securer",
+	"version": "0.1.0",
+	"description": "",
+	"main": "./src/main.ts",
+	"scripts": {
+		"clean": "rm -r build",
+		"build-development": "webpack build --config webpack.config.js --watch --mode development",
+		"build-production": "webpack build --config webpack.config.js --mode production",
+		"run-development": ""
+	},
+	"author": {
+		"name": "NightFoxDev",
+		"url": "http://www.nightfoxdev.com"
+	},
+	"contributors": [
+		"George Hester"
+	],
+	"license": "MPL-2.0",
+	"dependencies": {
+		"@tauri-apps/api": "^1.2.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"uuid": "^9.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.18",
+		"@types/react": "^18.0.26",
+		"@types/react-dom": "^18.0.9",
+		"@types/uuid": "^9.0.0",
+		"html-webpack-plugin": "^5.5.0",
+		"ts-loader": "^9.4.2",
+		"typescript": "^4.9.4",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
+	}
+}

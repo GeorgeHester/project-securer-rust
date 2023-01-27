@@ -1,0 +1,70 @@
+{
+	"package": {
+		"productName": "Project Securer",
+		"version": "0.1.0"
+	},
+	"build": {
+		"devPath": "../app/build",
+		"distDir": "../app/build",
+		"beforeDevCommand": "",
+		"beforeBuildCommand": "",
+		"beforeBundleCommand": "",
+		"withGlobalTauri": true
+	},
+	"tauri": {
+		"allowlist": {
+			"fs": {
+				"readFile": true,
+				"writeFile": true,
+				"scope": [
+					"$DATA/*"
+				]
+			}
+		},
+		"bundle": {
+			"active": true,
+			"targets": "all",
+			"identifier": "com.nightfoxdev.projectsecurer",
+			"publisher": "NightFoxDev",
+			"icon": [
+				"icons/32x32.png",
+				"icons/128x128.png",
+				"icons/128x128@2x.png",
+				"icons/icon.icns",
+				"icons/icon.ico"
+			],
+			"resources": [],
+			"copyright": "Copyright © 2022 NightFoxDev",
+			"category": "Utility",
+			"shortDescription": "",
+			"longDescription": "",
+			"appimage": {
+				"bundleMediaFramework": false
+			},
+			"deb": {
+				"depends": []
+			},
+			"macOS": {
+				"frameworks": [],
+				"exceptionDomain": "",
+				"signingIdentity": null,
+				"providerShortName": null,
+				"entitlements": null
+			},
+			"externalBin": [],
+			"windows": {
+				"digestAlgorithm": "sha256",
+				"certificateThumbprint": null,
+				"timestampUrl": "",
+				"tsp": false,
+				"allowDowngrades": true
+			}
+		},
+		"security": {
+			"csp": null
+		},
+		"updater": {
+			"active": false
+		}
+	}
+}
