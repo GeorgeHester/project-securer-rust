@@ -3,7 +3,7 @@
     windows_subsystem = "windows"
 )]
 
-mod modules;
+pub mod modules;
 
 use crypto::digest::Digest;
 use crypto::sha3::Sha3;
