@@ -1,4 +1,19 @@
 /app/node_modules/
+.ds_store
+desktop.ini
+
+**/.ds_store
+**/desktop.ini
+
+.*
+!.gitignore
+
+/.*/
+!/.vscode/
+/.vscode/*
+!/.vscode/settings.json
+!/.github/
+
 /app/build/
 
 /tauri/target/
